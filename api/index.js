@@ -15,8 +15,7 @@ const MONGO_URL =
   "mongodb://cochintraders3_db_user:1VDLSzbwEUwLW6Wo@ac-tmon8ry-shard-00-00.s87vsw5.mongodb.net:27017,ac-tmon8ry-shard-00-01.s87vsw5.mongodb.net:27017,ac-tmon8ry-shard-00-02.s87vsw5.mongodb.net:27017/?ssl=true&replicaSet=atlas-tuleqj-shard-0&authSource=admin&retryWrites=true&w=majority";
 const MONGO_DB = process.env.MONGODB_DB || "TallyDB";
 const apiKey =
-  process.env.API_Key ||
-  "2a54ff0c0b16c5eccf1f88c633119f3c37c3b9a697c89e875a48b435400bb755";
+  process.env.API_Key;
 const MAIL_FROM_EMAIL =
   process.env.MAIL_FROM_EMAIL || "cochintraders3@gmail.com";
 const MAIL_FROM_PASS = process.env.MAIL_FROM_PASS || "sisl hskd vocg bwxz";
