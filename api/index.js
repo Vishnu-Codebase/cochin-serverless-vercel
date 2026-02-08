@@ -11,18 +11,17 @@ const app = express();
 
 const MONGO_URL =
   process.env.MONGODB_URL ||
-  process.env.MONGO_URL ||
-  "mongodb://cochintraders3_db_user:1VDLSzbwEUwLW6Wo@ac-tmon8ry-shard-00-00.s87vsw5.mongodb.net:27017,ac-tmon8ry-shard-00-01.s87vsw5.mongodb.net:27017,ac-tmon8ry-shard-00-02.s87vsw5.mongodb.net:27017/?ssl=true&replicaSet=atlas-tuleqj-shard-0&authSource=admin&retryWrites=true&w=majority";
-const MONGO_DB = process.env.MONGODB_DB || "TallyDB";
+  process.env.MONGO_URL;
+const MONGO_DB = process.env.MONGODB_DB;
 const apiKey =
   process.env.API_Key;
 const MAIL_FROM_EMAIL =
-  process.env.MAIL_FROM_EMAIL || "cochintraders3@gmail.com";
-const MAIL_FROM_PASS = process.env.MAIL_FROM_PASS || "sisl hskd vocg bwxz";
-const MAIL_FROM_NAME = process.env.MAIL_FROM_NAME || "Cochin Traders";
+  process.env.MAIL_FROM_EMAIL;
+const MAIL_FROM_PASS = process.env.MAIL_FROM_PASS;
+const MAIL_FROM_NAME = process.env.MAIL_FROM_NAME;
 const MAIL_TO_EMAIL =
-  process.env.MAIL_TO_EMAIL || "orders.cochintraders@outlook.com";
-const MAIL_TO_NAME = process.env.MAIL_TO_NAME || "Cochin Traders";
+  process.env.MAIL_TO_EMAIL;
+const MAIL_TO_NAME = process.env.MAIL_TO_NAME;
 
 let mongoClient = null;
 let mongoDb = null;
